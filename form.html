@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="./from.css">
+</head>
+<body>
+    <h1>SIGN-UP FORM</h1>
+    <form id="form" action="./submit.html">
+        <p>*Please enter the details to sign up*</p>
+        <div>
+        <label for="fname">First Name</label>
+        <input  type="text" id="fname" placeholder="first name">
+    </div>
+    <span  id="errorname"></span>
+    <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="last name">
+    </div>
+    <span  id="errorname2"></span>
+    <div>
+        <label for="email">Email ID</label>
+        <input type="text" id="email" placeholder="email id">
+    </div>
+    <span  id="erroremail"></span>
+    <div>
+        <label for="password">Create Password</label>
+        <input type="password" id="password" placeholder="create new password">
+    </div>
+    <span  id="errorpassword"></span>
+    <div>
+        <label for="password">Re-enter Password</label>
+        <input type="password" id="rpassword" placeholder="re-enter password">
+    </div>
+    <span id="errorrpassword"></span>
+    <span id="mismatch"></span>
+    <div>
+        <button type="submit" onclick="handleSubmit(event)" id="submit">Submit</button>
+    </div>
+
+    </form>
+
+    
+</body>
+<script src="./form.js"></script>
+</html>
